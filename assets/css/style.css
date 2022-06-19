@@ -117,6 +117,10 @@ Version:        1.0.0
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Marsha Belle';
+  src: url(/assets/fonts/marsha\ belle\ dafont.ttf);
+}
 /* 1.1	Theme Reset Style */
 html {
   font-size: 15px;
@@ -164,6 +168,13 @@ ul {
 
 .hide {
   display: none !important;
+}
+
+.gla_middle_titles {
+  font-family: 'Marsha Belle';
+  font-weight: normal;
+  font-size: 70px;
+  margin-bottom: 60px;
 }
 
 a {
