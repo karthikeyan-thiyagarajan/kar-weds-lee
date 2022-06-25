@@ -119,7 +119,7 @@ Version:        1.0.0
 }
 @font-face {
   font-family: 'Marsha Belle';
-  src: url(/assets/fonts/marsha\ belle\ dafont.ttf);
+  src: url(../assets/fonts/marsha\ belle\ dafont.ttf);
 }
 /* 1.1	Theme Reset Style */
 html {
