@@ -79,10 +79,6 @@
                                             
                                             </li>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html#moments">Moments</a>
-                                            
-                                        </li>
-                                        <li class="menu-item-has-children">
                                             <a href="index.html#time">Time & Place</a>
                                             
                                         </li>
@@ -163,7 +159,8 @@
                                         </div>
                                         <div class="office-info-text">
                                             <h2>Call Now</h2>
-                                            <p>+91 9787780489</p>
+                                            <p>+91</p>
+                                            <p>9787780489</p>
                                         </div>
                                     </div>
                                 </div> 
@@ -194,14 +191,14 @@
                                     <textarea class="form-control" name="note"  id="note" placeholder="Message..."></textarea>
                                 </div>
                                 <div class="submit-area">
-                                    <button type="submit" class="theme-btn-s4">Get in Touch</button>
+                                    <button type="submit" class="theme-btn-s4" id="form-sub">Get in Touch</button>
                                     <div id="loader">
                                         <i class="ti-reload"></i>
                                     </div>
                                 </div>
                                 <div class="clearfix error-handling-messages">
-                                    <div id="success">Thank you</div>
-                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                    <div class="hide" id="success">Thank you</div>
+                                    <div class="hide"  id="error"> Error occurred while sending email. Please try again later. </div>
                                 </div>
                             </form>
                         </div>
@@ -358,15 +355,15 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
     <script>
-        $('#sendmail').click(function() {
+        $('#form-sub').click(function() {
             var name = $("#name").val();
             var email = $("#email").val();
             var message = $("#note").val();
             var contact = $("#adress").val();
             window.open("mailto:carromkarthi36@gmail.com?subject=Wedding-Enquiry&body=Name:"+ name +
-            ", Email: "+email+
-            ", Contact: "+contact+
-            ", Message: "+message
+            ",%0A Email: "+email+
+            ",%0A Contact: "+contact+
+            ",%0A Message: "+message
             , "_blank");
             });
             
