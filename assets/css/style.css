@@ -268,6 +268,13 @@ img {
 .section-padding {
   padding: 120px 0;
 }
+
+.goldImg{
+    height: 280px;
+  }
+ .goldImg1{
+    height: 200px;
+  }
 @media (max-width: 991px) {
   .section-padding {
     padding: 90px 0;
@@ -277,6 +284,15 @@ img {
   .section-padding {
     padding: 80px 0;
   }
+  .gla_middle_titles {
+    font-size: 50px;
+  }
+  .goldImg{
+    height: 12rem;
+  }
+  .goldImg1{
+      height: 10rem;
+    }
 }
 
 /*** contact form error handling ***/
@@ -6833,6 +6849,12 @@ static-hero-s4
   .story-section .story-timeline h3 {
     font-size: 18px;
     font-size: 1.2rem;
+  }
+  .story-section .story-timeline .img-holder .story-shape-img {
+    left: 0px;
+  }
+  .img-holder {
+      width: 203px;
   }
 }
 .story-section .story-timeline .date {
