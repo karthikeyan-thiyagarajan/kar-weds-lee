@@ -142,6 +142,15 @@ body {
   body {
     font-size: 14px;
   }
+  .des-only {
+    display: none !important;
+  }
+  .mob-only {
+      display: revert !important;
+    }
+}
+.mob-only {
+  display: none;
 }
 
 .slideanim {
@@ -3973,10 +3982,10 @@ img {
 }
 @media (max-width: 1199px) {
   .static-hero-s2 .middle-couple-pic {
-    width: 492px;
-    height: 520px;
-    bottom: -16px;
-  }
+     width: 385px;
+     height: 520px;
+     bottom: 50px;
+ }
 }
 @media (max-width: 991px) {
   .static-hero-s2 .middle-couple-pic {
