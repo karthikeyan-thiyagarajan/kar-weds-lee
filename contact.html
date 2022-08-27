@@ -21,7 +21,8 @@
     <meta property="og:image:secure_url" itemprop="image"
           content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/couple.png"/>
     
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Kar 💚💙 Lee</title>
     
     <link href="assets/css/themify-icons.css" rel="stylesheet">
@@ -137,7 +138,7 @@
                     <div class="office-info">
                         <div class="row">
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item">
+                                <div class="office-info-item slideanim">
                                     <div class="office-info-icon">
                                         <a class="icon"
                                            href="http://maps.google.com/maps?daddr=Ayira+vysya+ilaignar+Sangam"
@@ -155,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item">
+                                <div class="office-info-item slideanim">
                                     <div class="office-info-icon">
                                         <a class="icon" href="mailto: carromkarthi36@gmail.com"
                                            title="Mail to carromkarthi36@gmail.com">
@@ -170,7 +171,7 @@
                                 </div>
                             </div>
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item">
+                                <div class="office-info-item slideanim">
                                     <div class="office-info-icon">
                                         <a class="icon" href="tel:+919787780489" title="Call +91 9787780489">
                                             <i class="fi flaticon-phone-call"></i>
@@ -186,12 +187,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wpo-contact-title">
+                    <div class="wpo-contact-title slideanim">
                         <h2>Have Any Question?</h2>
                         <p>It is a long established fact that a reader will be distracted
                             content of a page when looking.</p>
                     </div>
-                    <div class="wpo-contact-form-area">
+                    <div class="wpo-contact-form-area slideanim">
                         <form method="post" id="sendmail">
                             <div>
                                 <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
@@ -212,7 +213,7 @@
                                 <textarea class="form-control" name="note" id="note"
                                           placeholder="Message..."></textarea>
                             </div>
-                            <div class="submit-area">
+                            <div class="submit-area slideanim">
                                 <button type="submit" class="theme-btn-s4" id="form-sub">Get in Touch</button>
                                 <div id="loader" class="hide">
                                     <i class="ti-reload"></i>
@@ -233,7 +234,7 @@
     <!-- end wpo-contact-pg-section -->
     
     <!--  start wpo-contact-map -->
-    <section class="wpo-contact-map-section">
+    <section class="wpo-contact-map-section slideanim">
         <h2 class="hidden">Contact map</h2>
         <div class="wpo-contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.554836666618!2d78.58846231457805!3d9.547348293162337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0107dedbd99c47%3A0x7c499ab9df548c10!2sKarthikeyan%20Thiyagarajan!5e0!3m2!1sen!2smy!4v1657858418271!5m2!1sen!2smy"
@@ -247,9 +248,9 @@
     <footer class="wpo-site-footer">
         <div class="wpo-upper-footer">
             <div class="container-fluid">
-                
+    
                 <div class="container text-center slideanim">
-                    <p><img src="assets/images/animations/thanks_gold.gif" height="200" alt=""></p>
+                    <p><img class="goldImg1" src="assets/images/animations/thanks_gold.gif" alt=""></p>
                 </div>
                 
                 <br>
@@ -391,7 +392,12 @@
             ",%0A Message: "+message
             , "_blank");
             });
-            
+       $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos, winTop;
+                $(this).offset().top < $(window).scrollTop() + 600 && $(this).addClass("slide");
+            });
+        });
     
 
 </script>
