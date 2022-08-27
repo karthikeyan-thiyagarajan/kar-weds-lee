@@ -138,6 +138,10 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
 }
+.center-imgs{
+    margin-left: 4rem;
+    margin-top: -8rem;
+}
 @media (max-width: 767px) {
   body {
     font-size: 14px;
