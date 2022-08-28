@@ -11,28 +11,29 @@
     <!-- Primary Meta Tags -->
     <title>Kar 💚💙 Lee</title>
     <meta property="og:title" content="Karthikeyan Weds Leelanjali"/>
-    <meta name="description" content="Wedding Invitation from Karthikeyan and Leelanjali">
+    <meta name="description" content="Karthikeyan and Leelanjali Wedding Invitation">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
+    <meta property="og:image:type" content="image/png">
     
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Karthikeyan Weds Leelanjali">
-    <meta itemprop="description" content="Wedding Invitation from Karthikeyan and Leelanjali">
-    <meta itemprop="image" content="http://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.jpeg">
+    <meta itemprop="description" content="Karthikeyan and Leelanjali Wedding Invitation">
+    <meta itemprop="image" content="http://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.png">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee">
     <meta property="og:title" content="Karthikeyan Weds Leelanjali">
-    <meta property="og:description" content="Wedding Invitation from Karthikeyan and Leelanjali">
-    <meta property="og:image" itemprop="image" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.jpeg">
+    <meta property="og:description" content="Karthikeyan and Leelanjali Wedding Invitation">
+    <meta property="og:image" itemprop="image" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee">
     <meta property="twitter:title" content="Karthikeyan Weds Leelanjali">
-    <meta property="twitter:description" content="Wedding Invitation from Karthikeyan and Leelanjali">
-    <meta property="twitter:image" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.jpeg">
+    <meta property="twitter:description" content="Karthikeyan and Leelanjali Wedding Invitation">
+    <meta property="twitter:image" content="https://karthikeyan-thiyagarajan.github.io/kar-weds-lee/assets/images/slider/invite.png">
     
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico">
@@ -150,7 +151,7 @@
                     <div class="office-info">
                         <div class="row">
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item slideanim">
+                                <div class="office-info-item slideanimOnLoad">
                                     <div class="office-info-icon">
                                         <a class="icon"
                                            href="http://maps.google.com/maps?daddr=Ayira+vysya+ilaignar+Sangam"
@@ -168,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item slideanim">
+                                <div class="office-info-item slideanimOnLoad">
                                     <div class="office-info-icon">
                                         <a class="icon" href="mailto: carromkarthi36@gmail.com"
                                            title="Mail to carromkarthi36@gmail.com">
@@ -183,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                <div class="office-info-item slideanim">
+                                <div class="office-info-item slideanimOnLoad">
                                     <div class="office-info-icon">
                                         <a class="icon" href="tel:+919787780489" title="Call +91 9787780489">
                                             <i class="fi flaticon-phone-call"></i>
@@ -408,6 +409,18 @@
             $(".slideanim").each(function () {
                 var pos, winTop;
                 $(this).offset().top < $(window).scrollTop() + 600 && $(this).addClass("slide");
+            });
+        });
+        
+        var myFunc = function() {
+            $(".slideanimOnLoad").removeClass("hide");
+            $(".slideanimOnLoad").addClass("slide");
+        }
+        $(document).ready(function() {
+            $(".slideanimOnLoad").addClass("hide")
+            $(".slideanimOnLoad").each(function () {
+                setTimeout(myFunc,600);
+
             });
         });
     

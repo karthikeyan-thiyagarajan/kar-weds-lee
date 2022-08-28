@@ -135,7 +135,7 @@
                             <h3>Karthikeyan</h3>
                             <h3>Weds</h3>
                             <h3>Leelanjali</h3>
-                            <div class="middle-couple-pic mob-only">
+                            <div class="middle-couple-pic mob-only slideanimOnLoad1">
                                 <img src="assets/images/slider/centre img.png" alt="">
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                         <div class="middle-couple-pic">
-                            <img class=" center-imgs" src="assets/images/slider/centre img.png" alt="">
+                            <img class="slideanimOnLoad1 center-imgs" src="assets/images/slider/centre img.png" alt="">
                         </div>
                         <div class="text-grid groom slideanimOnLoad des-only">
                             <div class="couple-img">
@@ -773,11 +773,19 @@
             $(".slideanimOnLoad").removeClass("hide");
             $(".slideanimOnLoad").addClass("slide");
         }
+        var myFunc1 = function() {
+            $(".slideanimOnLoad1").removeClass("hide");
+            $(".slideanimOnLoad1").addClass("slide");
+        }
         $(document).ready(function() {
             $(".slideanimOnLoad").addClass("hide")
+            $(".slideanimOnLoad1").addClass("hide")
             $(".slideanimOnLoad").each(function () {
                 setTimeout(myFunc,600);
 
+            });
+            $(".slideanimOnLoad1").each(function () {
+                setTimeout(myFunc1,1000);
             });
         });
     
