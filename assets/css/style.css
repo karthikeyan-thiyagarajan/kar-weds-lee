@@ -3998,7 +3998,7 @@ img {
 }
 .static-hero-s2 .text-grid {
   width: 20%;
-  padding: 140px 80px 40px;
+
 }
 @media (max-width: 1500px) {
   .static-hero-s2 .text-grid {
@@ -4205,6 +4205,19 @@ img {
 .wpo-hero-style-3 .wpo-wedding-date {
   padding-top: 30px;
 }
+.design {
+   background-image: url("../images/white-flower.png");
+   background-position-y: center;
+   background-size: cover;
+}
+.design1 {
+      background-image: url("../images/white-flower-1.png");
+  }
+
+.design2 {
+      background-image: url("../images/pngegg.png");
+  }
+
 @media (max-width: 575px) {
   .wpo-hero-style-3 .wpo-wedding-date {
     padding-top: 10px;
@@ -4234,7 +4247,16 @@ img {
   .wpo-hero-style-3 .wpo-wedding-date #clock > div:last-child {
     right: 0;
   }
-}
+  .design {
+      background-image: url("../images/white-flower.png");
+  }
+  .design1 {
+        background-image: url("../images/white-flower-1.png");
+    }
+    .design2 {
+          background-image: url("../images/pngegg.png");
+      }
+    }
 @media (max-width: 1399px) {
   .wpo-hero-style-3 .wpo-wedding-date #clock div + div {
     margin-left: 10px;
@@ -4550,6 +4572,7 @@ static-hero-s4
   width: 98%;
   height: 92%;
   z-index: -1;
+  background: url("../images/white-flower-1.png");
 }
 @media (max-width: 1200px) {
   .wpo-site-footer .wpo-upper-footer:before {
@@ -4570,6 +4593,7 @@ static-hero-s4
 @media (max-width: 767px) {
   .wpo-site-footer .wpo-upper-footer {
     padding: 30px 20px 0;
+    background-image: url("../images/white-flower-1.png");
   }
 }
 @media (max-width: 991px) {
@@ -11659,6 +11683,7 @@ static-hero-s4
 .color3 .wpo-testimonials-section .wpo-testimonials-wrap .wpo-testimonials-active .owl-dots button,
 .color3 .blog-sidebar .search-widget input {
   background: rgba(30, 130, 103, 0.1);
+  background-image: url("../images/white-flower-1.png");
 }
 .color3 .pagination-wrapper .pg-pagination li a,
 .color3 .wpo-blog-single-section .comment-respond .form-submit input {
