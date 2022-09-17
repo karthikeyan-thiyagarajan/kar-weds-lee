@@ -7042,6 +7042,7 @@ static-hero-s4
   padding: 40px 35px;
   text-align: center;
   background: #edf3f8;
+  background-image: url("../images/white-flower-1.png") !important;
 }
 @media (max-width: 1200px) {
   .wpo-event-section .wpo-event-wrap .wpo-event-item .wpo-event-text {
