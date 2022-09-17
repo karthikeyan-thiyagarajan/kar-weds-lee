@@ -4215,7 +4215,7 @@ img {
   }
 
 .design2 {
-      background-image: url("../images/pngegg.png");
+      background-image: url("../images/white-flower.png");
   }
 
 @media (max-width: 575px) {
@@ -4254,7 +4254,7 @@ img {
         background-image: url("../images/white-flower-1.png");
     }
     .design2 {
-          background-image: url("../images/pngegg.png");
+          background-image: url("../images/white-flower.png");
       }
     }
 @media (max-width: 1399px) {
